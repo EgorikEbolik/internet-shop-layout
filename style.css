@@ -1,0 +1,173 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+/*--- Container ---*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+/*--- Header ---*/
+.header {}
+
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #cecece;
+    padding: 20px 0;
+    align-items: center
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url(imgs/header_back.jpg) top no-repeat;
+    background-size: cover;
+    margin-top: 50px
+}
+
+.nav {
+    text-transform: uppercase;
+    text-align: right
+}
+
+.nav__link {
+    color: #313131;
+    text-decoration: none;
+    transition: 0.4s linear;
+    margin-left: 40px
+}
+
+.nav__link:first-child {
+    margin-left: 0px
+}
+
+.nav__link:hover {
+    color: lightgreen;
+}
+
+.intro_texts {
+    text-align: center;
+    padding-top: 300px;
+}
+
+.intro__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    color: forestgreen;
+
+}
+
+.intro__slogan {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 15px;
+    color: #636c6c;
+    overflow: hidden;
+}
+
+.adventeges {
+    background-color: #fff;
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+
+}
+
+.adventeges__inner {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #636c6c;
+}
+
+.adventeges__description {
+    font-weight: 600;
+    font-size: 16px;
+    color: #afb8b8;
+    padding-top: 45px;
+
+}
+
+.adventeges_list {
+    text-transform: capitalize;
+    list-style: none;
+    padding: 100px 0;
+    width: 700px;
+}
+
+.adventeges_element {
+    border-right: 2px solid #020202;
+    transition: 0.2s;
+    max-width:453px;
+    min-width: 453px
+}
+
+.adventeges_element:hover {
+    border-right: 10px solid #5dca88;
+}
+
+.adventeges_element:hover .adventeges_button {
+    color: #636c6c;
+}
+
+.adventeges_element:hover .adventeges_icon {
+    color: #5dca88;
+}
+
+.adventeges_button {
+    cursor: pointer;
+    color: #9fa9a9;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.2s linear;
+    padding-right: 20px;
+
+
+}
+
+.adventeges_icon {
+
+    margin-top: 100px;
+    color: #9fa9a9;
+    margin-right: 45px;
+    font-size: 48px;
+    transition: 0.2s linear;
+
+
+}
+
+.first_adventege {
+    margin-left: 150px;
+    max-width: 627px;
+    max-width: 451px
+
+
+}
+
+.first_adventege_title {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 55px;
+    color: #636c6c;
+}
+
+.first_adventege_desc {
+    font-size: 16px;
+    font-weight: 600;
+    color: #afb8b8;
+    padding-top: 40px;
+
+}
