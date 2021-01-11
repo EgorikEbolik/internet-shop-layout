@@ -33,13 +33,14 @@ body {
 
 .nav {
     text-transform: uppercase;
-    text-align: right
+    text-align: right;
+    font-size: 18px;
 }
 
 .nav__link {
     color: #313131;
     text-decoration: none;
-    transition: 0.4s linear;
+    transition: 0.2s linear;
     margin-left: 40px
 }
 
@@ -47,9 +48,15 @@ body {
     margin-left: 0px
 }
 
-.nav__link:hover {
-    color: lightgreen;
+.nav__link:last-child {
+    margin-right: 40px;
 }
+
+.nav__link:hover {
+    color: #5dca88;
+}
+
+
 
 .intro_texts {
     text-align: center;
@@ -73,7 +80,7 @@ body {
 }
 
 .adventeges {
-    background-color: #fff;
+    background-color: #ffffff;
 
 }
 
@@ -109,12 +116,13 @@ body {
 .adventeges_element {
     border-right: 2px solid #020202;
     transition: 0.2s;
-    max-width:453px;
-    min-width: 453px
+    max-width: 453px;
+    min-width: 453px;
 }
 
 .adventeges_element:hover {
     border-right: 10px solid #5dca88;
+    transform: translate(5px, -5px);
 }
 
 .adventeges_element:hover .adventeges_button {
@@ -153,8 +161,6 @@ body {
     margin-left: 150px;
     max-width: 627px;
     max-width: 451px
-
-
 }
 
 .first_adventege_title {
@@ -171,3 +177,92 @@ body {
     padding-top: 40px;
 
 }
+
+.subscription {
+    margin-top: 150px;
+    background-color: #f2f9fe;
+
+}
+
+.subscrition_texts {
+    text-align: left;
+    width: 600px
+}
+
+.subscription_title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #5dca88;
+    margin-top: 170px
+}
+
+.subscription_line {
+    border-bottom: 2px solid #949c9c;
+    max-width: 150px;
+    padding-top: 30px;
+}
+
+.subscription_subtitle {
+    font-size: 30px;
+    font-weight: 600;
+    color: #949c9c;
+    margin-top: 50px;
+
+}
+
+.subscription_description {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 55px;
+
+}
+
+
+
+.subscription_readMore_btn {
+    margin-top: 60px;
+    background: #f2f9fe;
+    color: #636c6c;
+    border: 3px solid #aab2b5;
+    border-radius: 30px;
+    font-size: 21px;
+    font-weight: 600;
+    height: 60px;
+    width: 240px;
+    transition: 0.2s;
+
+}
+
+.subscription_readMore_btn:hover {
+    background: #636c6c;
+    color: #f2f9fe;
+    border: 3px solid #636c6c;
+    cursor: pointer;
+    transform: scale(1.1)
+
+}
+
+.subscription_deals {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #5dca88;
+    padding-bottom: 35px;    /***** ToDo
+                            Отрегулировать subscription_deals на тот же уровень, что  subscription_title *****/
+
+}
+
+
+.subscription_item {
+    width : 49.333%;
+    text-align: center;
+
+}
+
+
+
+.subscription_item_title {
+    font-size:
+}
+
+

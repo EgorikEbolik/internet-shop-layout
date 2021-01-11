@@ -21,7 +21,7 @@ function chagneDelivery() {
 
     btn.addEventListener("click", function () {
         document.querySelector(".first_adventege_title").innerHTML = "Быстрая доставка";
-        document.querySelector(".first_adventege_desc").innerHTML = "Вы будете получать доставки каждый день в указанное Вами время";
+        document.querySelector(".first_adventege_desc").innerHTML = "Вы будете получать доставки каждый день в указанное Вами время.";
         document.querySelector(".adventege_img").src = "imgs/delivery.png";
     })
 }
