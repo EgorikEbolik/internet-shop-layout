@@ -14,7 +14,7 @@ body {
 .header {}
 
 
-
+/*  header__inner включает в себя навигацию  */
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -23,6 +23,7 @@ body {
     align-items: center
 }
 
+/* intro содержит бэкграунд-картинку, название компании и его слоган */
 .intro {
     width: 100%;
     height: 100vh;
@@ -31,12 +32,14 @@ body {
     margin-top: 50px
 }
 
+
+/* Меню навигации */
 .nav {
     text-transform: uppercase;
     text-align: right;
     font-size: 18px;
 }
-
+/* Ссылка в меню навигации */
 .nav__link {
     color: #313131;
     text-decoration: none;
@@ -57,7 +60,7 @@ body {
 }
 
 
-
+/* Тексты в блоке intro */
 .intro_texts {
     text-align: center;
     padding-top: 300px;
@@ -79,17 +82,20 @@ body {
     overflow: hidden;
 }
 
+/* Преимущества */
 .adventeges {
     background-color: #ffffff;
 
 }
 
+
+/* Позволяет разместить блоки слева и справа */
 .flex {
     display: flex;
-    align-items: center;
 
 }
 
+/* Преимущества компании */
 .adventeges__inner {
     text-align: center;
     padding-top: 100px;
@@ -98,6 +104,8 @@ body {
     color: #636c6c;
 }
 
+
+/* Описание преимуществ */
 .adventeges__description {
     font-weight: 600;
     font-size: 16px;
@@ -106,6 +114,7 @@ body {
 
 }
 
+/* Список преимуществ */
 .adventeges_list {
     text-transform: capitalize;
     list-style: none;
@@ -113,6 +122,7 @@ body {
     width: 700px;
 }
 
+/* Элемент списка преимуществ */
 .adventeges_element {
     border-right: 2px solid #020202;
     transition: 0.2s;
@@ -133,6 +143,7 @@ body {
     color: #5dca88;
 }
 
+/* Кнопки преимуществ  */
 .adventeges_button {
     cursor: pointer;
     color: #9fa9a9;
@@ -146,6 +157,7 @@ body {
 
 }
 
+/* Иконки возле adventeges_button  */
 .adventeges_icon {
 
     margin-top: 100px;
@@ -157,8 +169,10 @@ body {
 
 }
 
+/* Описание преимуществ */
 .first_adventege {
     margin-left: 150px;
+    margin-top: 100px;
     max-width: 627px;
     max-width: 451px
 }
@@ -178,15 +192,17 @@ body {
 
 }
 
+/* Раздел с подписками */
 .subscription {
-    margin-top: 150px;
     background-color: #f2f9fe;
 
 }
 
+
 .subscrition_texts {
     text-align: left;
-    width: 600px
+    width: 600px;
+
 }
 
 .subscription_title {
@@ -196,12 +212,14 @@ body {
     margin-top: 170px
 }
 
+/* Линия под subscription_title */
 .subscription_line {
     border-bottom: 2px solid #949c9c;
     max-width: 150px;
     padding-top: 30px;
 }
 
+/* Подзаголовок */
 .subscription_subtitle {
     font-size: 30px;
     font-weight: 600;
@@ -210,6 +228,7 @@ body {
 
 }
 
+/* Описание подписок */
 .subscription_description {
     font-weight: 600;
     font-size: 16px;
@@ -217,52 +236,121 @@ body {
 
 }
 
-
-
+/* Кнопка "Узнать больше" */
 .subscription_readMore_btn {
-    margin-top: 60px;
     background: #f2f9fe;
     color: #636c6c;
-    border: 3px solid #aab2b5;
+    border: 3px solid #636c6c;
     border-radius: 30px;
     font-size: 21px;
     font-weight: 600;
     height: 60px;
     width: 240px;
     transition: 0.2s;
+    margin-top: 205px
 
 }
 
+/* Эффект при наведении мыши на кнопку */
 .subscription_readMore_btn:hover {
     background: #636c6c;
     color: #f2f9fe;
-    border: 3px solid #636c6c;
     cursor: pointer;
     transform: scale(1.1)
 
 }
 
+/* Виды подписок */
 .subscription_deals {
     text-align: center;
     font-size: 36px;
     font-weight: 900;
     color: #5dca88;
-    padding-bottom: 35px;    /***** ToDo
-                            Отрегулировать subscription_deals на тот же уровень, что  subscription_title *****/
+    margin-top: 170px;
+
+
 
 }
 
-
+/* Один план подписки */
 .subscription_item {
-    width : 49.333%;
+    width : 500px;
     text-align: center;
+    margin-top: 88px;
+    border: 3px solid #636c6c;
+    border-radius: 30px;
+    display: table-cell;
 
 }
 
 
-
+/* Название варианта подписки */
 .subscription_item_title {
-    font-size:
+    font-size: 30px;
+    font-weight: 600;
+    color: #949c9c;
+    border-bottom:2px solid #636c6c
+
 }
 
 
+/* Список из параметров плана подписки  */
+.subscription_item_description_list {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0px
+
+}
+
+/* Однин из элементов списка плана подписки */
+.subscription_item_description_list_element {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0px;
+    margin-left: -40px;
+    color: #949c9c;
+    border-bottom: 2px solid #636c6c
+
+}
+
+/* Убираем отступ сверху у первого элемента списка */
+.subscription_item_description_list_element:first-child {
+    padding-top: 0px
+}
+
+/* Знак " - " перед каждым элементом списка */
+.subscription_item_description_list_element:before {
+    content: "-";
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+
+/* Кнопка для выбора плана подписки */
+.subscription_item_confirm_button {
+    background: #f2f9fe;
+    color: #636c6c;
+    border: 3px solid #636c6c;
+    border-radius: 30px;
+    font-size: 21px;
+    font-weight: 600;
+    height: 60px;
+    width: 230px;
+    transition: 0.2s;
+    margin: 20px 0
+}
+
+/* Эффект при наведении на кнопку выбора плана подписки */
+.subscription_item_confirm_button:hover {
+    background: #636c6c;
+    color: #f2f9fe;
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+.subscription_flex {
+    display: table;
+    border-spacing:75px
+
+}
