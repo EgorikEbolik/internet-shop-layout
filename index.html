@@ -22,19 +22,17 @@
                 </div>
 
                 <nav class="nav">
-                    <a class="nav__link" href="#">Отправить отзыв</a>
-                    <a class="nav__link" href="#">Домой</a>
-                    <a class="nav__link" href="#">Каталог</a>
-                    <a class="nav__link" href="#">Акции</a>
-                    <a class="nav__link" href="#">Подписка</a>
+                    <a class="nav__link" href="#contacts">Связаться с нами</a>
+                    <a class="nav__link" href="#adventeges">Преимущества</a>
+                    <a class="nav__link" href="#products">Каталог</a>
+                    <a class="nav__link" href="#subscription">Подписка</a>
                     <a class="nav__link" href="#">Личный кабинет</a>
-                    <a class="nav__link" href="#">Корзина</a>
                 </nav>
 
             </div>
         </div>
     </header>
-
+    <button class="topBtn"><i class="fas fa-arrow-up"></i></button>
     <div class="intro">
         <div class="container">
             <div class="intro_texts">
@@ -50,7 +48,7 @@
 
     <div class="adventeges">
         <div class="container">
-            <div class="adventeges__inner">
+            <div class="adventeges__inner" id="adventeges">
                 Наши преимущества
                 <div class="adventeges__description">
                     Доставка продуктов каждый день в указанное вами время, богатый ассортимент и высокое качество наших продуктов питания.
@@ -87,7 +85,7 @@
     <div class="subscription">
         <div class="container">
             <div class="flex">
-                <div class="subscrition_texts">
+                <div class="subscrition_texts" id="subscription">
                     <div class="subscription_title">Ежемесечная подписка</div>
                     <div class="subscription_line"></div>
                     <div class="subscription_subtitle">
@@ -147,6 +145,45 @@
 
         </div>
     </div>
+    <div class="products">
+        <div class="container">
+            <div class="products_title" id="products">
+                Наши продукты
+            </div>
+            <div class="products_slider">
+                <ul class="slider_list">
+                    <li class="slider_element slider_block"><img src="imgs/breakfast.jpg"></li>
+                    <li class="slider_element"><img src="imgs/kartofel.jpg"></li>
+                    <li class="slider_element"><img src="imgs/oladi.jpg"></li>
+                    <li class="slider_element"><img src="imgs/salat.jpg"></li>
+                    <li class="slider_element"><img src="imgs/sandwich.jpg"></li>
+                    <li class="slider_element"><img src="imgs/spaghetti.jpg"></li>
+                    <li class="slider_element"><img src="imgs/sup.jpg"></li>
+                </ul>
+                <div class="slider_btn">
+                    <button class="slider_right_btn">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer_title">
+                Связаться с дывелопером
+            </div>
+            <div class="footer_contacts" id="contacts">
+                <a href="https://vk.com/egorikebolik" class="footer_contacts_element" target="_blank"><i class="fab fa-vk"></i></a>
+                <a href="https://github.com/EgorikEbolik" class="footer_contacts_element" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="tg://resolve?domain=Egorik404" class="footer_contacts_element" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://twitter.com/Egor48391448" class="footer_contacts_element" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="change_texts.js"></script>
+    <script src="slider.js"></script>
+    <script src="topbtn.js"></script>
+</body>
 
-    <script src="main.js"></script>
-</body></html>
+</html>
